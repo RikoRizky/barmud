@@ -55,7 +55,7 @@ Vercel adalah platform serverless, jadi tidak mendukung MySQL persistent. Gunaka
    ```
    APP_NAME=Laravel App
    APP_ENV=production
-   APP_KEY=base64:xxxxxxx (yang sudah di generate)
+   APP_KEY=base64:4x3jtRbZS/HfUkootvE1cj9OKEa2H6lsTJUCnDKU74s=
    APP_DEBUG=true
    APP_URL=https://your-project.vercel.app
    
