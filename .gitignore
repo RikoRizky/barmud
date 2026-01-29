@@ -17,3 +17,5 @@ yarn-error.log
 
 # NOTE: vendor dan public/build di-KEEP (tidak di-ignore) untuk Vercel deployment
 # Pastikan kedua folder ini di-commit ke repository
+.vercel
+.env*.local

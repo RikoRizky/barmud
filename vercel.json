@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "framework": "laravel",
-  "buildCommand": "npm run build",
-  "outputDirectory": "public",
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
@@ -11,27 +13,9 @@
   ],
   "env": {
     "APP_ENV": "production",
-    "APP_DEBUG": "true",
-    "APP_URL": "https://your-project.vercel.app"
-  },
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
-      ]
-    }
-  ]
+    "APP_DEBUG": "false",
+    "VIEW_COMPILED_PATH": "/tmp/storage/framework/views",
+    "SESSION_DRIVER": "cookie",
+    "LOG_CHANNEL": "stderr"
+  }
 }
-
